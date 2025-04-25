@@ -11,7 +11,6 @@ if (!defined('_PS_VERSION_')) {
 
 class Tvgreeklish extends Module
 {
-    public static $executed = false;
     protected static array $basic = [
         // Special symbols
         '/["]/iu' => ' inches',
@@ -120,7 +119,7 @@ class Tvgreeklish extends Module
     {
         $this->name = 'tvgreeklish';
         $this->tab = 'administration';
-        $this->version = '1.1.0';
+        $this->version = '1.2.0';
         $this->author = 'tivuno.com';
         $this->ps_versions_compliancy = [
             'min' => '1.7',
@@ -134,11 +133,11 @@ class Tvgreeklish extends Module
         parent::__construct();
     }
 
-    public function install()
+    public function install(): bool
     {
-        require_once _PS_MODULE_DIR_ . 'tvcore/tvcore.php';
+        $module = Module::getInstanceByName('tvcore');
 
-        return parent::install() && Tvcore::registerHooks($this->name);
+        return parent::install() && $module::registerHooks($this->name);
     }
 
     public function hookDisplayAdminTvimportProfilesFormCreationLanguage()

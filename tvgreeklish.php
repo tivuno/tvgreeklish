@@ -3,7 +3,7 @@
  * Greeklish PrestaShop module - Nick
  * @author    tivuno.com <hi@tivuno.com>
  * @copyright 2018 - 2025 © tivuno.com
- * @license   https://tivuno.com/blog/nea-tis-epicheirisis/apli-adeia
+ * @license   https://tivuno.com/blog/bp/nea-tis-epicheirisis/apli-adeia
  */
 if (!defined('_PS_VERSION_')) {
     exit;
@@ -119,10 +119,10 @@ class Tvgreeklish extends Module
     {
         $this->name = 'tvgreeklish';
         $this->tab = 'administration';
-        $this->version = '1.2.0';
+        $this->version = '1.3.0';
         $this->author = 'tivuno.com';
         $this->ps_versions_compliancy = [
-            'min' => '1.7',
+            'min' => '9.0.0',
             'max' => _PS_VERSION_,
         ];
         $this->bootstrap = true;

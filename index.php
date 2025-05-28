@@ -3,7 +3,7 @@
  * Greeklish PrestaShop module - Nick
  * @author    tivuno.com <hi@tivuno.com>
  * @copyright 2018 - 2025 © tivuno.com
- * @license   https://tivuno.com/blog/nea-tis-epicheirisis/apli-adeia
+ * @license   https://tivuno.com/blog/bp/nea-tis-epicheirisis/apli-adeia
  */
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
